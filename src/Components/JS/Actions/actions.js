@@ -1,6 +1,7 @@
 import {
   ADD_TODO,
   COMPLETE_TODO,
+  DELETE_TODO,
   EDIT_TODO,
 } from "../ActionsTypes/actionsTypes";
 
@@ -12,4 +13,7 @@ export const editTodo = (payload) => {
 };
 export const completeTodo = (payload) => {
   return { type: COMPLETE_TODO, payload };
+};
+export const deleteTodo = (payload) => {
+  return { type: DELETE_TODO, payload };
 };
